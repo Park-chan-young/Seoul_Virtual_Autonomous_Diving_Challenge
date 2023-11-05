@@ -1,0 +1,10 @@
+In MORAI Simulator...
+
+lidar position
+x : 1.6
+y : 0.0
+z : 1.2
+
+roll : 0.0
+pitch : 0.0
+yaw : 0.0

@@ -1,0 +1,11 @@
+<launch>
+    <!-- detector -->
+    <node pkg="gpsimu" type="gpsimu_parser.py" name="GPS_IMU_parser"/>
+    
+    <!-- planner -->
+    <node pkg="path_planner" type="path_maker2.py" name="path_maker"  />
+
+    <!-- rviz -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find interface)/rviz/lane_detection_rviz.rviz"/> -->
+    
+</launch>

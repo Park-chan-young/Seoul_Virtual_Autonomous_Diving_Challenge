@@ -1,0 +1,26 @@
+<launch>
+    <!-- detector -->
+    <node pkg="gpsimu" type="gpsimu_parser.py" name="GPS_IMU_parser"/>
+    <node pkg="gpsimu" type="tf_pub.py" name="tf"  />
+    <node pkg="lidar" type="velodyne_cluster.py" name="velodyne_clustering"/>
+    <node pkg="lidar" type="velodyne_parser.py" name="velodyne_parser"/>
+    <!-- <node pkg="camera" type="lane_detector.py" name="lane_detector" /> -->
+    <!--node pkg="camera" type="pedes_detector.py" name="pedes_detector" /-->
+    <!--node pkg="camera" type="traffic_sign_detector.py" name="traffic_sign_detector" /-->
+    <!--node pkg="camera" type="traffic_light_detector.py" name="traffic_light_detector" /-->
+    <!-- <node pkg="camera" type="object_detector.py" name="object_detector" /> -->
+    
+    <!-- planner -->
+    <node pkg="path_planner" type="global_path_lane_1_pub.py" name="global_path_lane_1_pub" />
+    <node pkg="path_planner" type="global_path_lane_2_pub.py" name="global_path_lane_2_pub" />
+    <node pkg="path_planner" type="local_path_lane_1_pub.py" name="local_path_lane_1_pub" />
+    <node pkg="path_planner" type="local_path_lane_2_pub.py" name="local_path_lane_2_pub" />
+    <!-- <node pkg="path_planner" type="custom_path_pub.py" name="custom_path_pub"  /> -->
+    
+    <!-- controller -->
+    <node pkg="control" type="controller_obstacle_avoidance.py" name="controller" />
+
+    <!-- rviz -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find control)/rviz/lane_detection_rviz.rviz" /> -->
+    
+</launch>

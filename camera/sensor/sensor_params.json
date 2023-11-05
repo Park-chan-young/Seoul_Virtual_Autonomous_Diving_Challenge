@@ -1,0 +1,16 @@
+{    
+    "params_cam":
+    {
+        "ENGINE": "OPENCV",
+        "TYPE": "JPEG",
+        "WIDTH": 640,
+        "HEIGHT": 480,
+        "FOV": 90,
+        "X": 1.8,
+        "Y": 0,
+        "Z": 0.58,
+        "YAW": 0,
+        "PITCH": 0,
+        "ROLL": 0
+    }
+}

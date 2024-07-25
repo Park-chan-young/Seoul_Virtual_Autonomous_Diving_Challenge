@@ -6,4 +6,4 @@
 
  
 ## 프로젝트 정리 보고서
-- https://drive.google.com/drive/my-drive?hl=ko
+- https://drive.google.com/file/d/1p9j0aHpAalaIezJd2Vbv-lTKYEyDa61P/view?usp=sharing
